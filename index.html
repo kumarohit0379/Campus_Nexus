@@ -43,7 +43,7 @@
         font-size: 60px; 
         color:#fff;
         
-    } /* Graduation cap emoji */
+    } /* Logo text and paragraph */
     .logo-text h1 {
         margin:0; 
         font-size:30px; 
@@ -54,20 +54,20 @@
         font-size:20px; 
         color:white;}
 
-    /* Hero */
-     .hero {
-    position: relative;
-    /* width: 100%; */
-    /* height: auto; */
+    /* Main */
+     .main {
+    position: relative;/* to use adjust from original position */
+    width: 100%; 
+    height: auto;
     aspect-ratio: 16/9; /*Adjust to match your image shape(width/height) */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
+    text-align: center;
   }
 
-  .background-blur {
+  .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,6 +79,8 @@
     filter: blur(2px);
     z-index: 1;
   }
+    /* It is use to show the text in bright and the background image show little bright */
+    /*if any where you write text on background image then we should use thats type of priperties*/
   .overlay{
     position: absolute;
     top: 0PX; left: 0PX;
@@ -100,12 +102,12 @@
     max-width: 90%;
   }
 
-    .hero h1 {
+    .main h1 {
         margin:0; 
         font-size:36px;
         
     }
-    .hero p {
+    .main p {
         font-size:18px; 
         margin:10px 0;
         
@@ -119,8 +121,8 @@
         
     }
 
-    /* Sections */
-    .section {
+    /* Boxes */
+    .boxes {
         padding:50px 20px;
         
     }
@@ -176,8 +178,8 @@
     <a href="https://www.gecsiwan.org/about-us/contact/">Contact</a>
   </nav>
 </header>
-<div class="hero">
-  <div class="background-blur"></div>
+<div class="main">
+  <div class="background-image"></div>
   <div class="overlay"></div>
   <div class="content">
       <h1>Welcome to GEC Siwan</h1>
@@ -185,7 +187,7 @@
       <a href="https://www.gecsiwan.org/department/computer-science-and-technology-iot/about-computer-science-and-technology-iot/" class="btn">Explore Departments</a>
   </div>
 </div>
-<div class="section">
+<div class="boxes">
   <h2 style="text-align:center;">Our Highlights</h2>
   <div class="features">
     <div class="feature-card">
@@ -207,7 +209,7 @@
   </div>
 </div>
 
-<div class="section" style="background:#e6f2ff; text-align:center;">
+<div class="boxes" style="background:#e6f2ff; text-align:center;">
   <h2>Testimonials</h2>
   <p>"GEC Siwan provided me with excellent guidance and opportunities to grow academically." - Student A</p>
   <p>"The faculty and labs are amazing, very supportive environment." - Student B</p>
@@ -225,6 +227,7 @@
 </body>
 
 </html>
+
 
 
 
