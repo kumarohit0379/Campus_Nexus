@@ -32,11 +32,11 @@
     .gallery-item {
       background-color:white;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* left-right top-bottom blur color */
 
       transition: transform 0.3s ease, box-shadow 0.3s ease;/* There ease is timing function three steps (first slow second fast third slow)  AND box-shadaw is use for visualize in 3D after hover the color is show in deap, user feel well*/
       
-      overflow: hidden;/* Due to border radiius image is over flow from container so use this properties */
+      overflow: hidden;/* Due to border radius image is over flow from container so use this properties */
     }
 
     .gallery-item:hover {
@@ -119,6 +119,9 @@
 
   <div class="gallery">
     <div class="gallery-item">
+      /*yha #img1 ka mins hai ki where id of img1 ho usko full screen preview dikhana */
+      /*yha imh src ka work hai to show the image */
+      
       <a href="#img1"><img src="maam gecs.jpeg" alt=""><div class="caption">Ma'am at GECS</div></a>
     </div>
     <div class="gallery-item">
@@ -188,4 +191,5 @@
 
 </body>
 </html>
+
 
